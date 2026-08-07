@@ -1,0 +1,21 @@
+import java.util.*;
+import java.util.Scanner ; 
+public class Longest Substring Without Repeating Characters {
+    public staitc void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        HashSet<Character> set = new HashSet<>();
+        int left = 0 ;
+        int right = 0 ;
+        for(int right = 0  ; right < s.length() ; right++){
+            char ch = s.charAt(right);
+            while(set.contains(ch)){
+                set.remove(s.charAt(left))
+                left++;
+            }
+            set.add(ch);
+            max = Math.max(right - left + 1);
+        }
+        System.out.println(max);
+    }    
+}
