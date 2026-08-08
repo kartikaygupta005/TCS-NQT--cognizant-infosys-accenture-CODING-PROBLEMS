@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class primeornot {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        boolean isprime = true;  
+
+        if (a == 2) {
+            System.out.println("is a prime number");
+            return;
+        }
+
+        if (a <= 1) {
+            isprime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(a); i++) {
+                if (a % i == 0) {
+                    isprime = false;
+                    break; // ✅ important
+                }
+            }
+        }
+
+        if (isprime) {
+            System.out.println("is prime");
+        } else {
+            System.out.println("not prime");
+        }
+    }
+}
