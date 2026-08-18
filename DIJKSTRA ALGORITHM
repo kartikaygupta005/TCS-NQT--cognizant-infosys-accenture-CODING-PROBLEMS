@@ -1,0 +1,27 @@
+Dijkstra's Algorithm
+
+Dijkstra's Algorithm is a graph algorithm used to find the shortest path from one source vertex to all other vertices in a weighted graph.
+
+Key Point
+
+Dijkstra works when:
+
+The graph is weighted
+Edge weights are non-negative (weight >= 0)
+It can work with directed or undirected graphs
+
+
+
+
+
+How Dijkstra Works
+Set the source distance to 0.
+Set the distance of all other vertices to infinity.
+Select the unvisited vertex having the smallest distance.
+Visit its neighboring vertices.
+Update their distances if a shorter path is found.
+Mark the current vertex as visited.
+Repeat until all vertices are processed.
+
+
+
